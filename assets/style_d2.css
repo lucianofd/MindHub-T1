@@ -10,11 +10,13 @@
         
 
 nav a {
-  color: blue;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
 }
 
 .active {
-  color:black;
+  background-color:rgb(117, 161, 51);
 }
 
 header {
@@ -28,6 +30,7 @@ header {
   width: 83%;
   height: 300px;
   left: 75px;
+  top: 50px;
   
 }
 
@@ -47,22 +50,24 @@ header {
   border-radius: 30px;
   width: 120px;
   height: 120px;
+  position: absolute;
+  top: 475px;
+  left: 75px;
+  z-index: 1;
+}
+.main-nav ul li {
+  display: inline-block;
   position: relative;
-  top: 70px;
-  right: 120px;
+  left: 750px;
+  top: -270px;
   z-index: 1;
 }
 
-.main-nav {
-  display: block;
-  top: 70px;
-  left: 75px;
-  position: relative;
-}
-
 #menu{
-list-style: none;
-line-height: 5;
+    
+    list-style: none;
+    
+
 }
 
 .tit-section {
@@ -71,7 +76,7 @@ line-height: 5;
   width: 83%;
   left: 75px;
   position: absolute;
-  top: 360px;
+  top: 410px;
   font-size: large;
   text-align: center;
 }
@@ -79,10 +84,10 @@ line-height: 5;
 .section-img{      
   position: relative;
 /* align-content: center; */
-  width: 73%;
-  left: 190px;
-  top: -157px;
-  filter: blur(2px);
+  width: 40%;
+  left: 512px;
+  top: 70px;
+
   
 }
 
@@ -100,6 +105,19 @@ line-height: 5;
 }
 .p {
   position: relative;
+}
+
+footer{
+    display: inline;
+    top: 90px;
+    position: relative;
+}
+
+.contact-img{
+    position: relative;
+    width: 50%;
+    left: 310px;
+    top: 131px;
 }
 
 
