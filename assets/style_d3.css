@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+        
+
+nav a {
+  background-color: rgb(189, 187, 187);
+  color:black;
+  text-decoration: none;
+}
+
+.active {
+  background-color:lightblue;
+}
+
+header {
+    position: relative;
+    
+}
+
+#principal {
+
+    position: relative;
+    width: 100%;
+    height: 300px;
+  
+}
+
+
+.brand {
+  
+    display: flex;
+    position: relative;
+    top: 46px;
+    left: 0px;
+    z-index: 1;
+    font-size: 40px;
+    background-color: #ffa83beb;
+    justify-content: center;
+}
+
+#logo {
+ 
+  background-color: #dddada;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 18px;
+  left: 27px;
+  z-index: 1;
+}
+.main-nav ul li {
+    position: relative;
+    display: inline-block;
+    top: -283px;
+    left: 812px;
+    z-index: 1;
+
+}
+
+#menu{
+    
+    list-style: none;
+    
+
+}
+
+.tit-section {
+    background-color: #ffa83beb;
+    color: white;
+    width: 83%;
+    left: 75px;
+    position: absolute;
+    top: 410px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.section-img{      
+  position: relative;
+/* align-content: center; */
+  width: 40%;
+  left: 512px;
+  top: 70px;
+
+  
+}
+
+.contact-img{
+    position: relative;
+    width: 40%;
+    left: 208px;
+    top: 127px;
+}
+
+
+.content{
+    left: 22px;
+    top: -234px;
+    position: relative;
+    font-size: large;
+    list-style: none;
+  
+}
+
+.content-ev{
+    left: 75px;
+    top: -117px;
+    position: relative;
+    font-size: large;
+    list-style: none;
+}
+.resalta{
+  backdrop-filter: contrast(0.5);
+}
+.p {
+  position: relative;
+}
+
+footer{
+    display: inline;
+    top: 90px;
+    position: relative;
+}
+
+.contact-img{
+    position: relative;
+    width: 50%;
+    left: 310px;
+    top: 131px;
+}
