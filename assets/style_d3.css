@@ -85,7 +85,7 @@ header {
 
 .section-img{      
   position: relative;
-/* align-content: center; */
+
   width: 40%;
   left: 512px;
   top: 70px;
@@ -94,40 +94,23 @@ header {
 }
 
 .contact-img{
-    position: relative;
-    width: 40%;
-    left: 208px;
-    top: 127px;
+    
 }
 
 
 .content{
-    left: 22px;
-    top: -234px;
-    position: relative;
-    font-size: large;
-    list-style: none;
+   
   
 }
 
 .content-ev{
-    left: 75px;
-    top: -117px;
-    position: relative;
-    font-size: large;
-    list-style: none;
-}
-.resalta{
-  backdrop-filter: contrast(0.5);
-}
-.p {
-  position: relative;
+   
 }
 
+
+
 footer{
-    display: inline;
-    top: 90px;
-    position: relative;
+    
 }
 
 .contact-img{
