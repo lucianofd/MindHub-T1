@@ -68,8 +68,11 @@ Header {
   
   #principal {
     width: 100%;
-    height: 401px;
+    height: 382px;
     display: flex;
+    position: relative;
+    top: -5em;
+    z-index: -1;
   }
   
   #logo {
