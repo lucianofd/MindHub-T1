@@ -28,9 +28,124 @@
             <li><a  href="./contact.html">Contact</a></li>
         </ul>  
         </nav>
-      
-      
+
     </Header>
-    
+    <br>
+    <main>
+        <form action="./show_data.html" method="get">
+            <fieldset>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"></input>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"></input><br></b>
+                <label for="street">Street Address:</label>
+                <input type="text" id="street" name="street"></input><br><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"></input>
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip"></input><br><br>
+                <label for="birh-date">Birth Date(mm/dd/yyyy):</label>
+                <input type="date" id="bdate" name="birth-date"></input>
+                <label for="gender">Gender:</label>
+                <label for="famele">Famele</label>
+                <input type="radio" id="famale" name="gender" value="Famele">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male"><br><br>
+                <label for="grade">Grade:</label>
+                <input type="radio" id="pre" name="grade" value="Pre-School">
+                <label for="pre">Pre-School</label>
+                
+                <input type="radio" id="fi" name="grade" value="1st">
+                <label for="first">1st</label>
+
+                <input type="radio" id="sec" name="grade" value="2nd">
+                <label for="sec">2nd</label>
+
+                <input type="radio" id="thi" name="grade" value="3rd">
+                <label for="thi">3rd</label>
+
+                <input type="radio" id="four" name="grade" value="4th">
+                <label for="four">4th</label>
+
+                <input type="radio" id="four" name="grade" value="5th">
+                <label for="five">5th</label>
+            </fieldset>   
+            <fieldset>
+                
+                <h2>which elementary school do you live near?</h2>
+                <label for="Closes-to" >Closest School:</label>
+                    <select name="school" id="Closes-to">
+                        <option value="">Select</option>
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="North Elementary ">North Elementary</option>
+                        <option value="Howard A Yeager">Howard A Yeager</option>   
+                        <option value="South Elementary">South Elementary</option>
+                                    
+                    </select>
+            </fieldset> 
+            <br><br>
+            <fieldset>
+                <h2>What position(s) do you normally play? (check all that apply)</h2>
+
+                <input type="checkbox" id="forward" name="position" value="Forward">
+                <label for="forward">Forward</label>
+                <label for="mid">
+                <input type="checkbox" id="mid" name="position" value="Midfield">
+                Midfield</label>
+
+                <input type="checkbox" id="def" name="position" value="Defense">
+                <label for="def">Defense</label>
+
+                <input type="checkbox" name="position" id="gok" value="Goalkeeper">
+                <label for="gok">Goalkeeper</label>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <label for="unif">   
+                <h2>Unifor size:</h2>
+                </label>
+                <input type="radio" id="ys" name="unif" value="Youth Small">
+                <label for="ys">Youth Small</label>
+                <input type="radio" id="me" name="unif" value="Medium">
+                <label for="me">Medium</label>
+                <input type="radio" id="ym" name="unif" value="Youth Medium">
+                <label for="ym">Youth Medium</label>
+                <input type="radio" id="la" name="unif" value="Large">
+                <label for="la">Large</label>
+                <input type="radio" id="yl" name="unif" value="Youth Large">
+                <label for="yl">Youth Large</label>
+                <input type="radio" id="el" name="unif" value="Extra-Large">
+                <label for="el">Extra-Large</label>
+                <input type="radio" id="sm" name="unif" value="Small">
+                <label for="sm">Small</label>
+                
+
+            </fieldset>
+            <fieldset>
+                <h2>Permission to Play</h2>
+                <p>l, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of
+                   the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with 
+                   hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, 
+                   I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers,
+                   including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result
+                    of the registrant's participation in the programand/orbeing transported to or from MDI-IL sponsored activities,which 
+                    transportation
+                    By entering your name below, I herebyagree andauthorizethe above.ln addition, by signing below, lalso acknowledge that 
+                    I have read the cancellation policy and agree to its terms.
+                    </p>
+                
+                    <label for="signature">Parent/Guardian Signature:</label>
+                        <input type="text" id="signature" name="signature">
+                    <br>
+                    <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    
+                    
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </main>
 </body>
 </html>
