@@ -14,12 +14,10 @@ body{
 
 Header {
   display: flex;
- /*justify-content: space-between;*/
   align-items: center;
   padding: 20px;
   background-color: slategrey;
-  margin-top: 50px;
- 
+  margin-top: 30px; 
   flex-wrap: wrap;
 }
 
@@ -28,14 +26,14 @@ Header {
   width: 177px;
   height: auto;
   margin-right: 20px;
-  margin-top: -69px;
+  margin-top: -65px;
 }
 
 .main-nav {
     display: flex;
     background-color:none;
     flex-grow: 1;
-    justify-content: right;
+    /*justify-content: right;*/
 }
 
 #menu {
@@ -61,7 +59,9 @@ Header {
 }
 
   .brand {
-    font-size: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
     font-weight: bold;
     margin: 0;
   }
@@ -86,21 +86,21 @@ Header {
   
 
   .section-img {
-    width: 150px;
+    width: 35%;
     height: auto;
-    margin-right: 20px;
+    margin-left: 2%;
+    
   }
   
-  .tit-section {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
+  
+  
   
   .content-ev {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 50%;
+    text-align: center;
   }
   
 
@@ -114,6 +114,45 @@ footer p {
   margin: 0;
   font-size: 14px;
 }
+
+/*-------------Home------*/
+
+.main-home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tit-section{
+    text-align: center;
+    font-size: xxx-large;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: -5%;
+}
+
+.home-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-sec {
+    width: 15%;
+    margin: 2%;
+}
+
+@media (max-width: 767px) {
+    .home-sec {
+      flex-direction: column;
+    }
+  
+    .logo-sec,
+    .content-ev,
+    .section-img {
+      width: 100%;
+      margin: 0;
+    }
+  }
 
 /*--------------rules-----------*/
   
@@ -254,7 +293,193 @@ ol {
 
   }
   
+/*---------Checkbox y form-------------*/
+
+form {
+    background-color: aliceblue;
+    display: inline-block;
+    position: relative;
+    margin: 16px;
+    padding: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+label  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;   
+}
+
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 3px solid #f8e12e;
+    border: 3px solid white;
+    width: 16px;
+    height: 16px;
+  }
   
+input[type='radio']:checked {
+    background: #5fa199;
+  }
   
+  input[type='checkbox'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 3px solid #f8e12e;
+    border: 3px solid white;
+    width: 16px;
+    height: 16px;
+  }
   
-   
+input[type='checkbox']:checked {
+    background: #5fa199;
+  }  
+
+#form-tit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin: inherit;
+}  
+  
+.personal {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div {
+    margin: 5px;
+}
+
+fieldset {
+    
+    margin-top: 20px;
+}
+
+.position> label {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.position> input {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.uniform> label{
+    display: inline-block;
+    margin: 5px;
+    margin-top: 5px;
+
+}
+
+.uniform> input{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+.permission> p {
+    font-family: arial;
+    line-height: 1.5;
+    text-indent: initial;
+    margin-left: 5px;
+}
+
+.submit {
+    
+    font-size: larger;
+    font-weight: bold;
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 5px solid #f8e12e;
+    border: 5px solid white;
+    margin-top: 8px;
+}
+
+/*---- Media query---- */
+@media only screen and (max-width: 767px) {
+    /* Hide logo */
+    #logo {
+      display: none;
+    }
+  
+    .main-nav {
+      display: none;
+    }
+  
+    /* Crea dropdown menu */
+    .dropdown-menu {
+      display: block;
+      position: relative;
+    }
+  
+    .dropdown-menu button {
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+      display: block;
+      padding: 10px 15px;
+      width: 100%;
+    }
+  
+    .dropdown-menu button:after {
+      content: "▼";
+      font-size: 10px;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .dropdown-menu ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .dropdown-menu ul li {
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+    }
+  
+    .dropdown-menu ul li a {
+      color: #333;
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      width: 100%;
+    }
+  
+    /*-- muestra dropdown menu-- */
+    .dropdown-menu button:focus + ul,
+    .dropdown-menu button:active + ul {
+      display: block;
+    }
+  }
