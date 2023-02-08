@@ -19,6 +19,8 @@ Header {
   background-color: slategrey;
   margin-top: 30px; 
   flex-wrap: wrap;
+  position: sticky ;top:0;
+  z-index: 1;
 }
 
 
@@ -31,7 +33,7 @@ Header {
 
 .main-nav {
     display: flex;
-    background-color:none;
+    
     flex-grow: 1;
     /*justify-content: right;*/
 }
@@ -153,7 +155,36 @@ footer p {
       margin: 0;
     }
   }
+/*------ABOUT-----*/
+.main-about{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.about-img {
+    width: 40%;
+    height: auto;
+    order: 2;
+}
+
+.about-cont {
+    width: 59%;
+    order: 1;
+    margin-left: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-img {
+      width: 100%;
+      order: 2;
+      margin-bottom: 20px;
+    }
+  
+    .about-cont {
+      width: 100%;
+      order: 1;
+    }
+  }  
 /*--------------rules-----------*/
   
 #rules-m {
@@ -218,6 +249,7 @@ ol {
 
  #game-t {
     position: relative;
+    text-align: center;
   }
   
   #game-t img {
@@ -226,16 +258,14 @@ ol {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    height: -webkit-fill-available;
   }
 
- table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+ #game-t table {
     width: 80%;
+    margin: auto;
+    display: inline-block;
     border-collapse: collapse;
     z-index: 1;
     
@@ -244,6 +274,7 @@ ol {
  
   th, td {
     
+    border: 1px solid #f8e12e;
     padding: 8px;
     text-align: left;
   }
@@ -252,10 +283,42 @@ ol {
     background-color: #c2dfdb;
   }
   
- 
+ .g-i-3 {
+    font-size: x-large;
+    margin-top: -5%;
+ }
  .g-i-4 {
     text-decoration: underline;
  }
+
+ @media (max-width: 767px) {
+    #game-t table {
+        width: 100%;
+    }
+    
+ }
+
+ .game-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    align-content: center;
+    width: 80%;
+    background-color: #c3c5d1;
+    /* height: 86vh; */
+    overflow: auto;
+    flex-direction: row;
+}
+
+.game-h2 {
+    text-align: center;
+    margin: 20px;
+}
+.game-sec div {
+    background-color: #f8e12e;
+    text-align: center;
+}
   
   /*------------CONTACT-------------*/
 
@@ -291,6 +354,13 @@ ol {
     display: flex;
     align-self: center;
 
+  }
+
+  @media (max-width: 767px) {
+    .logo-contact{
+        display: none;
+    }
+    
   }
   
 /*---------Checkbox y form-------------*/
@@ -420,66 +490,23 @@ fieldset {
 
 /*---- Media query---- */
 @media only screen and (max-width: 767px) {
-    /* Hide logo */
+    
     #logo {
       display: none;
     }
+
+    header {
+        position: static;
+        flex-wrap: inherit;
+    }
   
     .main-nav {
-      display: none;
-    }
-  
-    /* Crea dropdown menu */
-    .dropdown-menu {
-      display: block;
-      position: relative;
-    }
-  
-    .dropdown-menu button {
-      background-color: #fff;
-      border: none;
-      cursor: pointer;
-      display: block;
-      padding: 10px 15px;
-      width: 100%;
-    }
-  
-    .dropdown-menu button:after {
-      content: "▼";
-      font-size: 10px;
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .dropdown-menu ul {
-      display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-    }
-  
-    .dropdown-menu ul li {
-      margin: 0;
-      padding: 10px 0;
-      width: 100%;
-    }
-  
-    .dropdown-menu ul li a {
-      color: #333;
-      display: block;
-      padding: 10px 15px;
-      text-decoration: none;
-      width: 100%;
-    }
-  
-    /*-- muestra dropdown menu-- */
-    .dropdown-menu button:focus + ul,
-    .dropdown-menu button:active + ul {
-      display: block;
-    }
+        flex-direction: column;
+      }
+    .main-nav #menu {
+        flex-direction: column;
+      }
+    .main-nav #menu li {
+        margin: 10px 0;
+      }
   }
