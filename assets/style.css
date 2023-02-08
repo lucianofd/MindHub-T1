@@ -204,6 +204,7 @@ footer p {
     justify-content: center;
     margin-block: auto;
     font-size: x-large;
+    margin-top: -5%;
     
   }
 
@@ -425,6 +426,7 @@ input[type='checkbox']:checked {
     display: flex;
     justify-content: center;
     margin: inherit;
+    margin-top: -5%;
 }  
   
 .personal {
